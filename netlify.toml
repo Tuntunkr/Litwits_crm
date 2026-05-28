@@ -1,12 +1,15 @@
 [build]
-  command = "vite build"
-  publish = "dist/client"
+command = "vite build"
+publish = "dist/client"
 
 [functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
+directory = "netlify/functions"
+node_bundler = "esbuild"
 
 [dev]
-  command = "npm run dev"
-  targetPort = 3000
-  port = 8888
+command = "npm run dev"
+targetPort = 3000
+port = 8888
+
+[database]
+skip_migrate = true
