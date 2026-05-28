@@ -1,0 +1,1 @@
+import{u as o,i as n,h as s}from"./index-Bdp1Xeol.js";function i(){const e=o();return n.useEffect(()=>{const t=s();t?t.role==="admin"?e({to:"/admin"}):t.role==="mentor"?e({to:"/mentor"}):e({to:"/student"}):e({to:"/login"})},[e]),null}export{i as component};

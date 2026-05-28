@@ -1,0 +1,90 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "9f32ddc7-ced8-4a85-a0e7-af803c14847b",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "tab_orders",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "serial",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "tab_orders"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "document_key",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "tab_orders"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "tab_order",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "tab_orders"
+    },
+    {
+      "type": "timestamp",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "name": "updated_at",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "tab_orders"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "name": "tab_orders_pkey",
+      "schema": "public",
+      "table": "tab_orders",
+      "entityType": "pks"
+    },
+    {
+      "nameExplicit": false,
+      "columns": [
+        "document_key"
+      ],
+      "nullsNotDistinct": false,
+      "name": "tab_orders_document_key_key",
+      "schema": "public",
+      "table": "tab_orders",
+      "entityType": "uniques"
+    }
+  ],
+  "renames": []
+}
